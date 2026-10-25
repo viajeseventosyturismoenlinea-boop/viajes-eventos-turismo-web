@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viajes Eventos y Turismo S.A.S. | Agencia de Viajes en Armenia</title>
+<meta name="description" content="Viajes Eventos y Turismo S.A.S. — Agencia de viajes operadora en Armenia, Quindío. Planes a San Andrés, Santa Marta, Cartagena, Coveñas, Punta Cana, Cancún y Panamá. RNT 255022.">
+<meta property="og:title" content="Viajes Eventos y Turismo S.A.S.">
+<meta property="og:description" content="Hoteles, vuelos y planes todo incluido al Caribe nacional e internacional. Promociones con obsequios en tu primera compra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E2F6B; --navy-2:#173F8A; --navy-3:#0A2350;
+  --teal:#0FA3B8; --aqua:#3CC7D6; --aqua-soft:#E3F7FA;
+  --gold:#D9A21B; --gold-2:#F2C14E; --sun:#F59E1B; --sun-2:#FF7A1A;
+  --ink:#0B1B3A; --muted:#5B6B86; --line:#E4EAF2;
+  --bg:#F5F8FC; --card:#FFFFFF; --wa:#25D366;
+  --radius:18px; --shadow:0 10px 30px rgba(14,47,107,.10); --shadow-lg:0 24px 60px rgba(14,47,107,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;overflow-x:hidden}
+h1,h2,h3,h4{font-family:Montserrat,sans-serif;line-height:1.15}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.grad-text{background:linear-gradient(90deg,var(--gold),var(--sun));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ===== HEADER ===== */
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:.3s;padding:14px 0}
+header.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(14,47,107,.08);padding:8px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-logo{width:58px;height:58px;border-radius:14px;background:#fff;object-fit:contain;padding:3px;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+header.solid .brand-logo{width:50px;height:50px}
+.brand-txt{line-height:1.05}
+.brand-txt b{display:block;font-family:Montserrat;font-weight:900;font-size:1.15rem;letter-spacing:.5px;color:#fff}
+.brand-txt span{font-family:Montserrat;font-weight:700;font-size:.68rem;letter-spacing:1.5px;color:var(--gold-2)}
+header.solid .brand-txt b{color:var(--navy)}
+header.solid .brand-txt span{color:var(--gold)}
+.menu{display:flex;gap:6px;list-style:none;align-items:center}
+.menu a{font-family:Montserrat;font-weight:700;font-size:.82rem;letter-spacing:.8px;color:#fff;padding:10px 14px;border-radius:999px;transition:.2s}
+.menu a:hover{background:rgba(255,255,255,.16)}
+header.solid .menu a{color:var(--navy)}
+header.solid .menu a:hover{background:var(--aqua-soft)}
+.menu .cta{background:var(--wa);color:#fff!important;display:flex;gap:8px;align-items:center}
+.menu .cta:hover{background:#1ebe5a!important}
+.burger{display:none;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.18);align-items:center;justify-content:center}
+header.solid .burger{background:var(--aqua-soft)}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;border-radius:2px;transition:.3s}
+header.solid .burger span,header.solid .burger span::before,header.solid .burger span::after{background:var(--navy)}
+.burger span::before,.burger span::after{content:"";position:absolute}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;padding:130px 0 120px;color:#fff;overflow:hidden;background:var(--navy-3)}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);animation:zoom 22s ease-in-out infinite alternate}
+@keyframes zoom{to{transform:scale(1.14)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,rgba(10,35,80,.92) 0%,rgba(14,47,107,.75) 45%,rgba(15,163,184,.35) 100%)}
+.hero-sun{position:absolute;right:-120px;top:60px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,var(--gold-2) 0%,var(--sun) 45%,rgba(255,122,26,0) 70%);opacity:.45;z-index:1;filter:blur(4px)}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.4px;margin-bottom:18px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 4px rgba(60,199,214,.3)}
+.hero small.pre{display:block;font-family:Montserrat;font-weight:700;font-size:clamp(1rem,2vw,1.35rem);color:var(--aqua)}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);font-weight:900;letter-spacing:-.5px;margin:6px 0 14px;max-width:760px}
+.hero p.lead{font-size:clamp(1rem,1.6vw,1.15rem);max-width:600px;opacity:.92}
+
+/* search box */
+.search{margin-top:34px;background:#fff;color:var(--ink);border-radius:22px;box-shadow:var(--shadow-lg);max-width:980px;overflow:hidden}
+.tabs{display:flex;gap:4px;padding:10px 10px 0;background:linear-gradient(180deg,#F1F6FB,#fff)}
+.tab{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;border-radius:14px 14px 0 0;font-family:Montserrat;font-weight:700;font-size:.88rem;color:var(--muted);transition:.2s}
+.tab.on{background:#fff;color:var(--navy);box-shadow:0 -3px 0 var(--teal) inset}
+.tab:hover:not(.on){color:var(--navy)}
+.sfields{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:12px;padding:18px}
+.fld{display:flex;flex-direction:column;gap:5px;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:9px 14px}
+.fld label{font-size:.7rem;font-weight:700;letter-spacing:.8px;color:var(--muted);text-transform:uppercase}
+.fld select,.fld input{border:0;background:transparent;font:600 .95rem Inter;color:var(--ink);outline:none;width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:Montserrat;font-weight:800;font-size:.9rem;padding:14px 22px;border-radius:14px;transition:.25s;white-space:nowrap}
+.btn-primary{background:linear-gradient(90deg,var(--teal),var(--navy-2));color:#fff;box-shadow:0 8px 20px rgba(15,163,184,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(15,163,184,.45)}
+.btn-gold{background:linear-gradient(90deg,var(--gold),var(--sun));color:#fff;box-shadow:0 8px 20px rgba(217,162,27,.35)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#1ebe5a}
+.btn-ghost{border:2px solid var(--line);color:var(--navy);background:#fff}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:28px;font-size:.9rem}
+.hero-stats b{display:block;font-family:Montserrat;font-size:1.5rem;color:var(--gold-2)}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;z-index:3}
+
+/* ===== TRUST STRIP ===== */
+.trust{margin-top:-50px;position:relative;z-index:5}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.trust-item{display:flex;gap:12px;align-items:center}
+.ico{width:46px;height:46px;flex:none;border-radius:14px;display:grid;place-items:center;font-size:1.3rem;background:var(--aqua-soft)}
+.trust-item b{font-family:Montserrat;font-size:.92rem;color:var(--navy);display:block}
+.trust-item span{font-size:.8rem;color:var(--muted)}
+
+/* ===== SECTION HEADINGS ===== */
+section{padding:80px 0}
+.sh{text-align:center;max-width:720px;margin:0 auto 40px}
+.sh .kicker{font-family:Montserrat;font-weight:800;font-size:.78rem;letter-spacing:2px;color:var(--teal);text-transform:uppercase}
+.sh h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:900;color:var(--navy);margin:8px 0 10px}
+.sh p{color:var(--muted)}
+
+/* ===== CATEGORIES ===== */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat{position:relative;border-radius:22px;overflow:hidden;min-height:230px;padding:26px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:.3s;box-shadow:var(--shadow)}
+.cat:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.cat.c1{background:linear-gradient(140deg,var(--navy) 0%,var(--navy-2) 60%,var(--teal) 130%)}
+.cat.c2{background:linear-gradient(140deg,var(--teal) 0%,#0B7F95 60%,var(--navy) 130%)}
+.cat.c3{background:linear-gradient(140deg,var(--sun-2) 0%,var(--gold) 60%,var(--sun) 120%)}
+.cat .big{position:absolute;right:18px;top:12px;font-size:4.4rem;opacity:.25;transition:.4s}
+.cat:hover .big{transform:rotate(-8deg) scale(1.1);opacity:.4}
+.cat h3{font-size:1.45rem;font-weight:900}
+.cat p{opacity:.9;font-size:.92rem;margin:6px 0 14px}
+.cat .go{font-family:Montserrat;font-weight:800;font-size:.8rem;letter-spacing:1px;display:inline-flex;gap:6px;align-items:center}
+
+/* ===== PLANS (directory layout) ===== */
+#planes{background:#fff}
+.dir{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start}
+.filters{position:sticky;top:96px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.filters h3{font-size:1.1rem;color:var(--navy);margin-bottom:16px;display:flex;justify-content:space-between;align-items:center}
+.filters h3 button{font-size:.75rem;color:var(--teal);font-weight:700}
+.fgroup{margin-bottom:20px}
+.fgroup > label{display:block;font-size:.72rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.sbox{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.sbox input{border:0;outline:none;font:500 .92rem Inter;width:100%;background:transparent}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:8px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:.84rem;color:var(--ink);transition:.2s}
+.chip:hover{border-color:var(--teal)}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+input[type=range]{width:100%;accent-color:var(--teal)}
+.range-val{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-top:4px}
+.range-val b{color:var(--navy)}
+.dir-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.dir-top .count{color:var(--muted);font-size:.92rem}
+.dir-top .count b{color:var(--navy)}
+.dir-top select{border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:600 .88rem Inter;color:var(--navy);background:#fff}
+.open-filters{display:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.media{position:relative;height:190px;overflow:hidden}
+.media .ph{position:absolute;inset:0;display:flex;align-items:flex-end;padding:16px;font-family:Montserrat;font-weight:900;font-size:1.6rem;color:rgba(255,255,255,.9)}
+.media .ph::before{content:"";position:absolute;right:24px;top:22px;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,var(--gold-2),var(--sun) 60%,transparent 72%)}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .media img{transform:scale(1.08)}
+.badge{position:absolute;top:12px;left:12px;z-index:2;background:rgba(255,255,255,.95);color:var(--navy);font-weight:800;font-size:.7rem;letter-spacing:.8px;padding:6px 10px;border-radius:999px;text-transform:uppercase}
+.badge.right{left:auto;right:12px;background:var(--navy);color:#fff}
+.cbody{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cbody h4{font-size:1.25rem;color:var(--navy);font-weight:800}
+.cbody .desc{font-size:.88rem;color:var(--muted)}
+.incl{display:flex;gap:6px;flex-wrap:wrap}
+.incl span{font-size:.74rem;font-weight:600;background:var(--aqua-soft);color:#0B7F95;padding:5px 9px;border-radius:8px}
+.price{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line)}
+.price small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+.price .amt{font-family:Montserrat;font-weight:900;font-size:1.55rem;color:var(--navy)}
+.price .amt.quote{font-size:1.1rem;color:var(--teal)}
+.price .per{font-size:.78rem;color:var(--muted)}
+.cact{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cact .btn{padding:11px 10px;font-size:.8rem;border-radius:12px}
+.empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--muted);background:var(--bg);border-radius:var(--radius)}
+
+/* ===== PROMOS ===== */
+#promociones{background:linear-gradient(180deg,var(--navy-3) 0%,var(--navy) 100%);color:#fff;position:relative;overflow:hidden}
+#promociones::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;left:-200px;top:-200px;background:radial-gradient(circle,rgba(15,163,184,.35),transparent 70%)}
+#promociones::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-180px;bottom:-220px;background:radial-gradient(circle,rgba(245,158,27,.28),transparent 70%)}
+#promociones .wrap{position:relative;z-index:1}
+#promociones .sh h2{color:#fff}
+#promociones .sh p{color:rgba(255,255,255,.8)}
+#promociones .sh .kicker{color:var(--gold-2)}
+.countdown{display:flex;justify-content:center;gap:10px;margin:18px 0 6px}
+.countdown div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:10px 12px;min-width:70px;text-align:center}
+.countdown b{display:block;font-family:Montserrat;font-size:1.6rem;color:var(--gold-2)}
+.countdown span{font-size:.68rem;letter-spacing:1px;text-transform:uppercase;opacity:.8}
+.pchips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.pchips .chip{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:#fff}
+.pchips .chip.on{background:linear-gradient(90deg,var(--gold),var(--sun));border-color:transparent}
+.promo{background:#fff;color:var(--ink);border:0}
+.promo .badge.right{background:linear-gradient(90deg,var(--gold),var(--sun))}
+.ptype{display:inline-flex;align-items:center;gap:6px;font-family:Montserrat;font-weight:800;font-size:.75rem;letter-spacing:1px;color:var(--teal);text-transform:uppercase}
+.dates{display:flex;gap:8px;align-items:center;font-size:.84rem;color:var(--ink);background:var(--bg);padding:8px 10px;border-radius:10px}
+.old{text-decoration:line-through;color:var(--muted);font-size:.9rem;font-weight:600}
+.gift{display:flex;gap:6px;align-items:center;font-size:.78rem;font-weight:700;color:#A06A00;background:#FFF4D6;padding:6px 10px;border-radius:8px}
+.promo .amt{color:var(--sun-2)}
+.terms{text-align:center;font-size:.78rem;opacity:.7;margin-top:26px}
+
+/* ===== EVENTS BANNER ===== */
+.events{border-radius:26px;overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr;background:linear-gradient(120deg,var(--teal),var(--navy-2));color:#fff;box-shadow:var(--shadow-lg)}
+.events .txt{padding:46px}
+.events h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;margin:8px 0 12px}
+.events ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:18px 0 24px}
+.events li{display:flex;gap:8px;align-items:center;font-weight:600;font-size:.92rem}
+.events .art{position:relative;min-height:300px;background:linear-gradient(160deg,rgba(255,255,255,.12),transparent)}
+.events .art .ring{position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.25)}
+.events .art .emj{position:absolute;inset:0;display:grid;place-items:center;font-size:6rem}
+
+/* ===== STEPS ===== */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative;transition:.3s}
+.step:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.step::before{counter-increment:s;content:"0" counter(s);position:absolute;right:18px;top:12px;font-family:Montserrat;font-weight:900;font-size:2.4rem;color:var(--aqua-soft)}
+.step h4{color:var(--navy);margin:14px 0 6px;font-size:1.05rem}
+.step p{font-size:.88rem;color:var(--muted)}
+
+/* ===== CONTACT ===== */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.cbox{background:#fff;border-radius:22px;padding:34px;box-shadow:var(--shadow)}
+.cbox h3{color:var(--navy);font-size:1.5rem;margin-bottom:6px}
+.cbox > p{color:var(--muted);margin-bottom:20px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form .full{grid-column:1/-1}
+.form input,.form select,.form textarea{width:100%;border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:12px 14px;font:500 .92rem Inter;color:var(--ink);outline:none}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--teal);background:#fff}
+.cinfo{background:linear-gradient(150deg,var(--navy),var(--navy-3));color:#fff;border-radius:22px;padding:34px;display:flex;flex-direction:column;gap:18px}
+.cinfo .row{display:flex;gap:14px;align-items:flex-start}
+.cinfo .ico{background:rgba(255,255,255,.1)}
+.cinfo small{display:block;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;opacity:.7}
+.cinfo b{font-size:1rem}
+.rnt-card{margin-top:auto;border:1px dashed rgba(242,193,78,.6);border-radius:14px;padding:14px;font-size:.84rem;background:rgba(242,193,78,.08)}
+.rnt-card b{color:var(--gold-2)}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy-3);color:rgba(255,255,255,.82);padding:60px 0 24px;font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px}
+footer h5{font-family:Montserrat;color:#fff;font-size:.95rem;margin-bottom:14px;letter-spacing:.5px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--aqua)}
+.flogo{display:flex;gap:10px;align-items:center;margin-bottom:14px}
+.flogo .brand-txt b{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:20px;font-size:.76rem;opacity:.75;display:grid;gap:8px}
+
+/* ===== FLOATING / MODALS ===== */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;gap:10px}
+.wa-bubble{background:#fff;color:var(--ink);padding:10px 14px;border-radius:14px 14px 4px 14px;box-shadow:var(--shadow);font-size:.85rem;font-weight:600;max-width:220px;animation:pop .5s .8s both}
+.wa-btn{width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.45);position:relative}
+.wa-btn::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--wa);animation:pulse 2s infinite}
+@keyframes pulse{from{transform:scale(.9);opacity:1}to{transform:scale(1.35);opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.gift-tab{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:65;background:linear-gradient(180deg,var(--gold),var(--sun));color:#fff;padding:14px 10px;border-radius:0 14px 14px 0;font-family:Montserrat;font-weight:800;font-size:.75rem;writing-mode:vertical-rl;letter-spacing:1px;box-shadow:var(--shadow)}
+.overlay{position:fixed;inset:0;z-index:90;background:rgba(10,27,58,.6);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:16px}
+.overlay.show{display:flex;animation:pop .3s both}
+.modal{background:#fff;border-radius:24px;max-width:560px;width:100%;max-height:92vh;overflow:auto;position:relative;box-shadow:var(--shadow-lg)}
+.close{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.9);font-size:1.3rem;z-index:3;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.promo-pop .top{background:linear-gradient(135deg,var(--navy) 0%,var(--teal) 100%);color:#fff;padding:34px 30px 30px;text-align:center;position:relative;overflow:hidden}
+.promo-pop .top::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-60px;top:-80px;background:radial-gradient(circle,var(--gold-2),var(--sun) 50%,transparent 70%);opacity:.5}
+.promo-pop .gbox{font-size:3.4rem;animation:bounce 1.6s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.promo-pop h3{font-size:1.6rem;font-weight:900;margin:8px 0 6px;position:relative;z-index:1}
+.promo-pop .top p{opacity:.9;position:relative;z-index:1}
+.promo-pop .bd{padding:24px 28px 28px}
+.benefits{display:grid;gap:10px;margin-bottom:18px}
+.benefits div{display:flex;gap:12px;align-items:center;background:var(--bg);border-radius:12px;padding:12px}
+.benefits b{color:var(--navy);display:block;font-size:.95rem}
+.benefits span{font-size:.82rem;color:var(--muted)}
+.pop-act{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fine{font-size:.72rem;color:var(--muted);text-align:center;margin-top:12px}
+.plan-modal .media{height:230px}
+.plan-modal .bd{padding:24px}
+.plan-modal h3{font-size:1.7rem;color:var(--navy);font-weight:900}
+.plan-modal ul.inc{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}
+.plan-modal ul.inc li{font-size:.88rem;display:flex;gap:8px}
+.qform{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.qform .full{grid-column:1/-1}
+
+/* mobile sheet */
+.sheet-bar{display:none}
+
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1024px){
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .menu{position:fixed;inset:0 0 0 auto;width:min(320px,85vw);background:#fff;flex-direction:column;align-items:stretch;padding:90px 20px 20px;transform:translateX(100%);transition:.35s;box-shadow:var(--shadow-lg)}
+  .menu.open{transform:none}
+  .menu a{color:var(--navy)!important;padding:14px 16px}
+  .burger{display:flex;z-index:2}
+  .sfields{grid-template-columns:1fr 1fr}
+  .sfields .btn{grid-column:1/-1}
+  .dir{grid-template-columns:1fr}
+  .filters{position:fixed;inset:auto 0 0 0;top:auto;z-index:95;border-radius:24px 24px 0 0;max-height:85vh;overflow:auto;transform:translateY(105%);transition:.35s;background:#fff;padding-bottom:90px}
+  .filters.open{transform:none}
+  .sheet-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:96;padding:12px 16px;background:#fff;border-top:1px solid var(--line);transform:translateY(110%);transition:.35s}
+  .sheet-bar.open{transform:none}
+  .sheet-bar .btn{width:100%}
+  .open-filters{display:inline-flex}
+  .cats{grid-template-columns:1fr}
+  .events{grid-template-columns:1fr}
+  .events .art{min-height:180px}
+  .contact{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .hero{padding-top:110px;min-height:auto}
+  .tab{font-size:.74rem;padding:12px 4px;flex-direction:column;gap:2px}
+  .sfields{grid-template-columns:1fr;padding:14px}
+  .trust-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .events .txt{padding:30px 22px}
+  .events ul{grid-template-columns:1fr}
+  .form,.qform,.plan-modal ul.inc,.pop-act{grid-template-columns:1fr}
+  .wa-bubble{display:none}
+  .brand-txt b{font-size:.95rem}
+  .countdown div{min-width:58px;padding:8px}
+  section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <img class="brand-logo" src="img/logo.png" alt="Viajes Eventos y Turismo" onerror="this.style.display='none'">
+      <div class="brand-txt"><b>VIAJES</b><span>EVENTOS Y TURISMO S.A.S.</span></div>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#inicio">INICIO</a></li>
+      <li><a href="#categorias">CATEGORÍAS</a></li>
+      <li><a href="#planes">PLANES</a></li>
+      <li><a href="#promociones">PROMOCIONES</a></li>
+      <li><a href="#eventos">EVENTOS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+      <li><a class="cta wa-link" data-msg="Hola, quiero información sobre sus planes de viaje." href="#">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.4Z"/></svg>
+        WHATSAPP</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Abrir menú"><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" style="background-image:url('img/hero.jpg'),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1800&q=70&auto=format&fit=crop')"></div>
+  <div class="hero-sun"></div>
+  <div class="wrap">
+    <span class="eyebrow"><i></i> Agencia de Viajes Operadora · RNT 255022</span>
+    <small class="pre">Tu mejor compañero de viaje es</small>
+    <h1>Viajes Eventos <span class="grad-text">y Turismo</span></h1>
+    <p class="lead">Hoteles, vuelos y planes todo incluido al Caribe colombiano e internacional. Te asesoramos de principio a fin para que tu próximo viaje sea exactamente como lo soñaste.</p>
+
+    <div class="search" id="search">
+      <div class="tabs" role="tablist">
+        <button class="tab on" data-cat="todo"><span>🌴</span> Todo incluido</button>
+        <button class="tab" data-cat="hotel"><span>🏨</span> Hoteles</button>
+        <button class="tab" data-cat="vuelo"><span>✈️</span> Vuelos</button>
+      </div>
+      <div class="sfields">
+        <div class="fld"><label for="sDest">Destino</label>
+          <select id="sDest"></select></div>
+        <div class="fld"><label for="sDate">Fecha de viaje</label>
+          <input type="month" id="sDate"></div>
+        <div class="fld"><label for="sPax">Viajeros</label>
+          <select id="sPax">
+            <option>2 adultos</option><option>1 adulto</option><option>3 adultos</option><option>4 adultos</option>
+            <option>2 adultos + 1 niño</option><option>2 adultos + 2 niños</option><option>Grupo (6 o más)</option>
+          </select></div>
+        <button class="btn btn-primary" id="sGo">🔍 Buscar planes</button>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div><b>7</b>destinos top</div>
+      <div><b>3</b>categorías de viaje</div>
+      <div><b>100%</b>asesoría personalizada</div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" height="70"><path fill="#F5F8FC" d="M0,40 C240,90 480,0 720,30 C960,60 1200,80 1440,30 L1440,90 L0,90Z"/></svg>
+</section>
+
+<!-- ================= TRUST ================= -->
+<div class="wrap trust">
+  <div class="trust-grid rv">
+    <div class="trust-item"><div class="ico">🛡️</div><div><b>Agencia certificada</b><span>Registro Nacional de Turismo 255022</span></div></div>
+    <div class="trust-item"><div class="ico">💬</div><div><b>Asesoría por WhatsApp</b><span>Te acompañamos antes, durante y después</span></div></div>
+    <div class="trust-item"><div class="ico">🌎</div><div><b>Nacional e internacional</b><span>Caribe colombiano y del mundo</span></div></div>
+    <div class="trust-item"><div class="ico">🎁</div><div><b>Obsequios en promociones</b><span>Beneficios en tu primera compra</span></div></div>
+  </div>
+</div>
+
+<!-- ================= CATEGORIES ================= -->
+<section id="categorias">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="kicker">¿Cómo quieres viajar?</span>
+      <h2>Elige tu categoría</h2>
+      <p>Arma tu viaje a tu medida: solo el hotel, solo los vuelos o el plan completo con todo incluido.</p>
+    </div>
+    <div class="cats">
+      <div class="cat c1 rv" data-go="hotel"><div class="big">🏨</div><h3>Hoteles</h3><p>Alojamiento seleccionado en los mejores destinos de playa, con tarifas especiales de agencia.</p><span class="go">VER HOTELES →</span></div>
+      <div class="cat c2 rv" data-go="vuelo"><div class="big">✈️</div><h3>Vuelos</h3><p>Tiquetes aéreos nacionales e internacionales con las aerolíneas que mejor se ajustan a tu viaje.</p><span class="go">VER VUELOS →</span></div>
+      <div class="cat c3 rv" data-go="todo"><div class="big">🌴</div><h3>Todo incluido</h3><p>Vuelos, hotel, alimentación y traslados en un solo plan. Tú solo te preocupas por disfrutar.</p><span class="go">VER PLANES →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANS DIRECTORY ================= -->
+<section id="planes">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="kicker">Tarifa estándar</span>
+      <h2>Nuestros planes</h2>
+      <p>Encuentra tu destino ideal, compara y cotiza directamente con un asesor.</p>
+    </div>
+
+    <div class="dir">
+      <aside class="filters" id="filters">
+        <h3>Filtros <button id="clearF">Limpiar</button></h3>
+        <div class="fgroup">
+          <label>Buscar</label>
+          <div class="sbox">🔎<input id="fText" placeholder="Ej: San Andrés, Cancún…"></div>
+        </div>
+        <div class="fgroup">
+          <label>Categoría</label>
+          <div class="chips" id="fCat">
+            <button class="chip on" data-v="todo">🌴 Todo incluido</button>
+            <button class="chip" data-v="hotel">🏨 Hoteles</button>
+            <button class="chip" data-v="vuelo">✈️ Vuelos</button>
+          </div>
+        </div>
+        <div class="fgroup">
+          <label>Tipo de destino</label>
+          <div class="chips" id="fReg">
+            <button class="chip on" data-v="all">🌎 Todos</button>
+            <button class="chip" data-v="nacional">🇨🇴 Nacionales</button>
+            <button class="chip" data-v="internacional">🌍 Internacionales</button>
+          </div>
+        </div>
+        <div class="fgroup">
+          <label for="fMax">Presupuesto máximo (por persona)</label>
+          <input type="range" id="fMax" min="1800000" max="5000000" step="100000" value="5000000">
+          <div class="range-val"><span>$1.8M</span><b id="fMaxV">$5.000.000</b></div>
+        </div>
+      </aside>
+
+      <div>
+        <div class="dir-top">
+          <span class="count">Mostrando <b id="cnt">0</b> planes</span>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-ghost open-filters" id="openF" style="padding:10px 14px">⚙️ Filtros</button>
+            <select id="sort" aria-label="Ordenar">
+              <option value="rec">Recomendados</option>
+              <option value="asc">Menor precio</option>
+              <option value="desc">Mayor precio</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid" id="plansGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="sheet-bar" id="sheetBar"><button class="btn btn-primary" id="closeF">Ver <span id="cnt2">0</span> planes</button></div>
+
+<!-- ================= PROMOTIONS ================= -->
+<section id="promociones">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="kicker">🔥 Ofertas por tiempo limitado</span>
+      <h2>Promociones especiales</h2>
+      <p>Tarifas promocionales por fecha y tipo de acomodación. En tu primera compra recibes obsequios y beneficios exclusivos.</p>
+      <div class="countdown" id="cd">
+        <div><b id="cdD">00</b><span>Días</span></div>
+        <div><b id="cdH">00</b><span>Horas</span></div>
+        <div><b id="cdM">00</b><span>Min</span></div>
+        <div><b id="cdS">00</b><span>Seg</span></div>
+      </div>
+      <small style="opacity:.75">Promociones vigentes para compras hasta el 30 de noviembre de 2026</small>
+    </div>
+    <div class="pchips" id="pFilter">
+      <button class="chip on" data-v="all">Todas</button>
+      <button class="chip" data-v="Dúo">💑 Dúo</button>
+      <button class="chip" data-v="Trío">👨‍👩‍👦 Trío</button>
+      <button class="chip" data-v="Familiar">👨‍👩‍👧‍👦 Familiar</button>
+      <button class="chip" data-v="nacional">🇨🇴 Nacionales</button>
+      <button class="chip" data-v="internacional">🌍 Internacionales</button>
+    </div>
+    <div class="grid" id="promoGrid"></div>
+    <p class="terms">*Tarifas por persona, sujetas a disponibilidad y cambios sin previo aviso. Aplican para las fechas de viaje indicadas. Obsequios y beneficios válidos en la primera compra de una promoción, según destino. Consulta condiciones con tu asesor.</p>
+  </div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+<section id="eventos">
+  <div class="wrap">
+    <div class="events rv">
+      <div class="txt">
+        <span class="kicker" style="color:var(--gold-2);font-family:Montserrat;font-weight:800;letter-spacing:2px;font-size:.78rem">VIAJES GRUPALES Y EVENTOS</span>
+        <h2>¿Viajas en grupo o estás organizando un evento?</h2>
+        <p style="opacity:.9">Diseñamos viajes a la medida para empresas, familias, amigos y celebraciones especiales, con tarifas preferenciales para grupos.</p>
+        <ul>
+          <li>✅ Viajes corporativos</li><li>✅ Incentivos empresariales</li>
+          <li>✅ Quinceañeros y aniversarios</li><li>✅ Lunas de miel</li>
+          <li>✅ Grupos de amigos y familia</li><li>✅ Excursiones escolares</li>
+        </ul>
+        <a href="#" class="btn btn-gold wa-link" data-msg="Hola, quiero cotizar un viaje grupal / evento.">Cotizar mi grupo →</a>
+      </div>
+      <div class="art">
+        <div class="ring" style="width:260px;height:260px;left:50%;top:50%;transform:translate(-50%,-50%)"></div>
+        <div class="ring" style="width:180px;height:180px;left:50%;top:50%;transform:translate(-50%,-50%)"></div>
+        <div class="emj">🎉</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="kicker">Así de fácil</span>
+      <h2>Reserva en 4 pasos</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="ico">🗺️</div><h4>Elige tu destino</h4><p>Explora nuestros planes o promociones y escoge el que más te guste.</p></div>
+      <div class="step rv"><div class="ico">💬</div><h4>Escríbenos</h4><p>Un asesor te cotiza por WhatsApp según tu fecha y número de viajeros.</p></div>
+      <div class="step rv"><div class="ico">📝</div><h4>Confirma tu reserva</h4><p>Separas tu cupo y recibes la confirmación de tu plan.</p></div>
+      <div class="step rv"><div class="ico">🏝️</div><h4>¡A disfrutar!</h4><p>Te acompañamos durante todo el viaje para que solo te ocupes de vivirlo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contacto" style="padding-top:20px">
+  <div class="wrap contact">
+    <div class="cbox rv">
+      <h3>Cotiza tu viaje</h3>
+      <p>Completa tus datos y te atenderemos de inmediato por WhatsApp.</p>
+      <form class="form" id="cForm">
+        <input required id="cName" placeholder="Nombre completo">
+        <input required id="cCity" placeholder="Ciudad de salida">
+        <select id="cDest"></select>
+        <select id="cCat"><option value="Todo incluido">Todo incluido</option><option value="Solo hotel">Solo hotel</option><option value="Solo vuelos">Solo vuelos</option></select>
+        <input type="month" id="cDate">
+        <select id="cPax"><option>2 adultos</option><option>1 adulto</option><option>3 adultos</option><option>2 adultos + 1 niño</option><option>2 adultos + 2 niños</option><option>Grupo (6 o más)</option></select>
+        <textarea class="full" id="cMsg" rows="3" placeholder="Cuéntanos más (opcional)"></textarea>
+        <button class="btn btn-wa full" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </div>
+    <div class="cinfo rv">
+      <h3 style="font-size:1.5rem">Estamos para ayudarte</h3>
+      <div class="row"><div class="ico">📍</div><div><small>Dirección</small><b>Carrera 13 # 22-10<br>Armenia, Quindío</b></div></div>
+      <div class="row"><div class="ico">📱</div><div><small>WhatsApp</small><b><a href="#" class="wa-link" data-msg="Hola, quiero información.">320 445 0390</a></b></div></div>
+      <div class="row"><div class="ico">🕘</div><div><small>Atención</small><b>Lunes a sábado</b></div></div>
+      <div class="rnt-card">Agencia de Viajes Operadora inscrita en el <b>Registro Nacional de Turismo No. 255022</b> · NIT 901.957.188-1</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo"><img class="brand-logo" src="img/logo.png" alt="" onerror="this.style.display='none'"><div class="brand-txt"><b>VIAJES</b><span>EVENTOS Y TURISMO S.A.S.</span></div></div>
+        <p>Conectamos viajeros con los mejores destinos del Caribe colombiano e internacional para que tu próximo gran viaje sea exactamente como lo soñaste.</p>
+      </div>
+      <div>
+        <h5>Destinos</h5>
+        <ul id="fDest"></ul>
+      </div>
+      <div>
+        <h5>Información</h5>
+        <ul>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#eventos">Viajes grupales y eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li>📍 Carrera 13 # 22-10, Armenia, Quindío</li>
+          <li>📱 <a href="#" class="wa-link" data-msg="Hola, quiero información.">+57 320 445 0390</a></li>
+          <li>🧾 NIT 901.957.188-1</li>
+          <li>🛡️ RNT 255022</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>VIAJES EVENTOS Y TURISMO S.A.S. — Agencia de Viajes Operadora, Registro Nacional de Turismo No. 255022.</p>
+      <p>En cumplimiento de la Ley 679 de 2001 y la Ley 1336 de 2009, la agencia rechaza la explotación, la pornografía, el turismo sexual y demás formas de abuso sexual con menores de edad. Nos acogemos a la Ley 300 de 1996, la Ley 1558 de 2012 y el Decreto 1074 de 2015 sobre responsabilidad de los prestadores de servicios turísticos. Estatuto del Consumidor: Ley 1480 de 2011.</p>
+      <p>© <span id="yr"></span> Viajes Eventos y Turismo S.A.S. · Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING ================= -->
+<button class="gift-tab" id="giftTab">🎁 BENEFICIOS</button>
+<div class="wa-float">
+  <div class="wa-bubble">¡Hola! 👋 ¿Te ayudamos a planear tu viaje?</div>
+  <a href="#" class="wa-btn wa-link" data-msg="Hola, quiero información sobre sus planes de viaje." aria-label="WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.4Z"/></svg>
+  </a>
+</div>
+
+<!-- Promo pop-up -->
+<div class="overlay" id="popPromo">
+  <div class="modal promo-pop">
+    <button class="close" data-close>×</button>
+    <div class="top">
+      <div class="gbox">🎁</div>
+      <h3>¡Tu primera compra tiene premio!</h3>
+      <p>Al reservar cualquiera de nuestras promociones recibes obsequios y beneficios exclusivos.</p>
+    </div>
+    <div class="bd">
+      <div class="benefits">
+        <div><div class="ico">🎒</div><div><b>Obsequio de bienvenida</b><span>Un detalle viajero de regalo con tu reserva</span></div></div>
+        <div><div class="ico">⭐</div><div><b>Beneficio exclusivo en destino</b><span>Un plus especial según el destino que elijas</span></div></div>
+        <div><div class="ico">💳</div><div><b>Bono para tu próximo viaje</b><span>Ahorra en tu siguiente aventura con nosotros</span></div></div>
+      </div>
+      <div class="pop-act">
+        <button class="btn btn-gold" id="popSee">Ver promociones</button>
+        <a href="#" class="btn btn-wa wa-link" data-msg="Hola, quiero conocer los obsequios y beneficios de las promociones en mi primera compra.">Hablar con un asesor</a>
+      </div>
+      <p class="fine">*Aplica para la primera compra de una promoción vigente. Beneficios sujetos a destino y disponibilidad.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Plan detail modal -->
+<div class="overlay" id="popPlan">
+  <div class="modal plan-modal" id="planBody"></div>
+</div>
+
+<script>
+const WA = '573204450390';
+const waUrl = m => `https://wa.me/${WA}?text=${encodeURIComponent(m)}`;
+const fmt = n => '$' + n.toLocaleString('es-CO');
+const U = id => `https://images.unsplash.com/${id}?w=900&q=70&auto=format&fit=crop`;
+
+/* ===== DATA (edita aquí precios y textos) ===== */
+const PLANS = [
+  {id:'san-andres', name:'San Andrés', reg:'nacional', price:2890000, g:['#0FA3B8','#0E2F6B'],
+   web:U('photo-1507525428034-b723cf961d3e'), desc:'El mar de los siete colores, Johnny Cay y el Acuario natural.',
+   inc:['Tiquetes aéreos','Hotel','Alimentación todo incluido','Traslados aeropuerto–hotel']},
+  {id:'santa-marta', name:'Santa Marta', reg:'nacional', price:1890000, g:['#F59E1B','#0E2F6B'],
+   web:U('photo-1519046904884-53103b34b206'), desc:'Playas, Sierra Nevada y la puerta al Parque Tayrona.',
+   inc:['Tiquetes aéreos','Hotel','Alimentación todo incluido','Traslados aeropuerto–hotel']},
+  {id:'cartagena', name:'Cartagena', reg:'nacional', price:1990000, g:['#D9A21B','#173F8A'],
+   web:null, desc:'Ciudad amurallada, historia, cultura e islas del Rosario.',
+   inc:['Tiquetes aéreos','Hotel','Alimentación todo incluido','Traslados aeropuerto–hotel']},
+  {id:'covenas', name:'Coveñas', reg:'nacional', price:1990000, g:['#3CC7D6','#0B7F95'],
+   web:U('photo-1510414842594-a61c69b5ae57'), desc:'Playas tranquilas del golfo de Morrosquillo, ideal en familia.',
+   inc:['Transporte','Hotel','Alimentación todo incluido','Plan de playa']},
+  {id:'punta-cana', name:'Punta Cana', reg:'internacional', price:4490000, g:['#0FA3B8','#0A2350'],
+   web:U('photo-1540541338287-41700207dee6'), desc:'Resorts frente al mar y playas de arena blanca en República Dominicana.',
+   inc:['Tiquetes aéreos','Resort todo incluido','Traslados aeropuerto–hotel','Asistencia al viajero']},
+  {id:'cancun', name:'Cancún', reg:'internacional', price:4990000, g:['#3CC7D6','#173F8A'],
+   web:U('photo-1552074284-5e88ef1aef18'), desc:'Caribe mexicano, zona hotelera, Isla Mujeres y la Riviera Maya.',
+   inc:['Tiquetes aéreos','Resort todo incluido','Traslados aeropuerto–hotel','Asistencia al viajero']},
+  {id:'panama', name:'Panamá', reg:'internacional', price:3690000, g:['#F59E1B','#0A2350'],
+   web:null, desc:'Ciudad moderna, Canal de Panamá, compras y playas.',
+   inc:['Tiquetes aéreos','Hotel','Desayunos / alimentación según plan','Traslados aeropuerto–hotel']}
+];
+/* Promociones: precio por persona según acomodación */
+const PROMOS = [
+  {id:'san-andres', type:'Dúo',      icon:'💑', price:2590000, from:'20 nov 2026', to:'15 dic 2026'},
+  {id:'cartagena',  type:'Dúo',      icon:'💑', price:1790000, from:'10 nov 2026', to:'12 dic 2026'},
+  {id:'santa-marta',type:'Trío',     icon:'👨‍👩‍👦', price:1690000, from:'1 feb 2027',  to:'31 mar 2027'},
+  {id:'covenas',    type:'Familiar', icon:'👨‍👩‍👧‍👦', price:1750000, from:'15 ene 2027', to:'28 feb 2027', note:'2 adultos + 2 niños'},
+  {id:'panama',     type:'Dúo',      icon:'💑', price:3290000, from:'1 nov 2026',  to:'15 dic 2026'},
+  {id:'punta-cana', type:'Dúo',      icon:'💑', price:4090000, from:'1 feb 2027',  to:'30 abr 2027'},
+  {id:'cancun',     type:'Trío',     icon:'👨‍👩‍👦', price:4490000, from:'1 mar 2027',  to:'30 abr 2027'}
+];
+const PROMO_END = new Date('2026-11-30T23:59:59-05:00');
+const CAT = {todo:{l:'Todo incluido',i:'🌴'}, hotel:{l:'Solo hotel',i:'🏨'}, vuelo:{l:'Solo vuelos',i:'✈️'}};
+
+/* ===== IMAGE helper (img/ local → web → degradado) ===== */
+function media(p, badges){
+  const srcs = [`img/${p.id}.jpg`]; if(p.web) srcs.push(p.web);
+  return `<div class="media" style="background:linear-gradient(135deg,${p.g[0]},${p.g[1]})">
+    <div class="ph">${p.name}</div>
+    <img loading="lazy" alt="${p.name}" src="${srcs[0]}" data-alt="${srcs.slice(1).join('|')}" onerror="imgNext(this)">
+    ${badges}</div>`;
+}
+function imgNext(el){
+  const rest = (el.dataset.alt||'').split('|').filter(Boolean);
+  if(rest.length){ el.dataset.alt = rest.slice(1).join('|'); el.src = rest[0]; }
+  else el.remove();
+}
+
+/* ===== STATE ===== */
+const st = {cat:'todo', reg:'all', text:'', max:5000000, sort:'rec'};
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+
+function planCard(p){
+  const c = CAT[st.cat];
+  const priced = st.cat === 'todo';
+  const msg = priced
+    ? `Hola, quiero información del plan ${c.l} a ${p.name} (tarifa estándar desde ${fmt(p.price)} por persona).`
+    : `Hola, quiero cotizar ${c.l.toLowerCase()} para ${p.name}.`;
+  const incl = st.cat==='hotel' ? ['🏨 Alojamiento','📍 Mejor ubicación'] : st.cat==='vuelo' ? ['✈️ Ida y regreso','🧳 Según tarifa'] : ['✈️ Vuelos','🏨 Hotel','🍹 Todo incluido'];
+  return `<article class="card rv in">
+    ${media(p, `<span class="badge">${p.reg==='nacional'?'🇨🇴 Nacional':'🌍 Internacional'}</span><span class="badge right">${c.i} ${c.l}</span>`)}
+    <div class="cbody">
+      <h4>${p.name}</h4>
+      <p class="desc">${p.desc}</p>
+      <div class="incl">${incl.map(x=>`<span>${x}</span>`).join('')}</div>
+      <div class="price">
+        ${priced
+          ? `<small>Tarifa estándar desde</small><div class="amt">${fmt(p.price)}</div><div class="per">Por persona · plan dúo</div>`
+          : `<small>Tarifa</small><div class="amt quote">Cotiza con tu asesor</div><div class="per">Según fecha y disponibilidad</div>`}
+      </div>
+      <div class="cact">
+        <button class="btn btn-ghost" onclick="openPlan('${p.id}')">Ver plan</button>
+        <a class="btn btn-wa" target="_blank" rel="noopener" href="${waUrl(msg)}">Cotizar</a>
+      </div>
+    </div></article>`;
+}
+
+function renderPlans(){
+  let list = PLANS.filter(p =>
+    (st.reg==='all' || p.reg===st.reg) &&
+    (!st.text || p.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').includes(st.text)) &&
+    p.price <= st.max);
+  if(st.sort==='asc') list.sort((a,b)=>a.price-b.price);
+  if(st.sort==='desc') list.sort((a,b)=>b.price-a.price);
+  $('#plansGrid').innerHTML = list.length ? list.map(planCard).join('')
+    : `<div class="empty">😕 No encontramos planes con esos filtros.<br><br><a class="btn btn-wa" target="_blank" href="${waUrl('Hola, busco un plan que no encuentro en la página.')}">Pregúntale a un asesor</a></div>`;
+  $('#cnt').textContent = list.length; $('#cnt2').textContent = list.length;
+}
+
+function renderPromos(f='all'){
+  const list = PROMOS.filter(pr => {
+    const p = PLANS.find(x=>x.id===pr.id);
+    return f==='all' || pr.type===f || p.reg===f;
+  });
+  $('#promoGrid').innerHTML = list.map(pr=>{
+    const p = PLANS.find(x=>x.id===pr.id);
+    const off = Math.round((1 - pr.price/p.price)*100);
+    const msg = `Hola, quiero la PROMOCIÓN ${pr.type.toUpperCase()} a ${p.name} (${fmt(pr.price)} por persona, viajando del ${pr.from} al ${pr.to}) y conocer el obsequio de primera compra.`;
+    return `<article class="card promo rv in">
+      ${media(p, `<span class="badge">${p.reg==='nacional'?'🇨🇴 Nacional':'🌍 Internacional'}</span><span class="badge right">-${off}%</span>`)}
+      <div class="cbody">
+        <span class="ptype">${pr.icon} Promo ${pr.type}${pr.note?' · '+pr.note:''}</span>
+        <h4>${p.name}</h4>
+        <div class="dates">📅 <span>Viaja del <b>${pr.from}</b> al <b>${pr.to}</b></span></div>
+        <div class="gift">🎁 Obsequio en tu primera compra</div>
+        <div class="price">
+          <span class="old">Antes ${fmt(p.price)}</span>
+          <div class="amt">${fmt(pr.price)}</div>
+          <div class="per">Por persona · acomodación ${pr.type.toLowerCase()}</div>
+        </div>
+        <a class="btn btn-gold" target="_blank" rel="noopener" href="${waUrl(msg)}">¡Lo quiero! →</a>
+      </div></article>`;
+  }).join('');
+}
+
+/* ===== PLAN MODAL ===== */
+function openPlan(id){
+  const p = PLANS.find(x=>x.id===id);
+  const promo = PROMOS.find(x=>x.id===id);
+  $('#planBody').innerHTML = `
+    <button class="close" data-close>×</button>
+    ${media(p, `<span class="badge">${p.reg==='nacional'?'🇨🇴 Nacional':'🌍 Internacional'}</span>`)}
+    <div class="bd">
+      <h3>${p.name}</h3>
+      <p style="color:var(--muted)">${p.desc}</p>
+      <ul class="inc">${p.inc.map(i=>`<li>✅ ${i}</li>`).join('')}</ul>
+      <div class="price" style="margin:0">
+        <small>Tarifa estándar todo incluido desde</small>
+        <div class="amt">${fmt(p.price)}</div><div class="per">Por persona · plan dúo</div>
+      </div>
+      ${promo?`<div class="gift" style="margin-top:12px">🔥 En promoción ${promo.type.toLowerCase()}: ${fmt(promo.price)} p/p · viaja del ${promo.from} al ${promo.to}</div>`:''}
+      <div class="qform">
+        <div class="fld"><label>Categoría</label><select id="mCat">${Object.entries(CAT).map(([k,v])=>`<option value="${v.l}" ${k===st.cat?'selected':''}>${v.i} ${v.l}</option>`).join('')}</select></div>
+        <div class="fld"><label>Fecha</label><input type="month" id="mDate"></div>
+        <div class="fld full"><label>Viajeros</label><select id="mPax"><option>2 adultos</option><option>1 adulto</option><option>3 adultos</option><option>2 adultos + 1 niño</option><option>2 adultos + 2 niños</option><option>Grupo (6 o más)</option></select></div>
+      </div>
+      <button class="btn btn-wa" style="width:100%" id="mGo">Cotizar por WhatsApp</button>
+      <p class="fine">Inclusiones sujetas al hotel, la temporada y la disponibilidad. Confirma con tu asesor.</p>
+    </div>`;
+  $('#mGo').onclick = () => {
+    const d = $('#mDate').value ? monthTxt($('#mDate').value) : 'fecha por definir';
+    window.open(waUrl(`Hola, quiero cotizar ${p.name} — ${$('#mCat').value}, ${$('#mPax').value}, ${d}.`),'_blank');
+  };
+  show('#popPlan');
+}
+function monthTxt(v){const [y,m]=v.split('-');return new Date(y,m-1).toLocaleDateString('es-CO',{month:'long',year:'numeric'});}
+
+/* ===== OVERLAYS ===== */
+function show(s){ $(s).classList.add('show'); document.body.style.overflow='hidden'; }
+function hide(o){ o.classList.remove('show'); document.body.style.overflow=''; }
+document.addEventListener('click', e=>{
+  if(e.target.matches('[data-close]') || e.target.classList.contains('overlay')) hide(e.target.closest('.overlay'));
+  const w = e.target.closest('.wa-link');
+  if(w){ e.preventDefault(); window.open(waUrl(w.dataset.msg||'Hola'),'_blank'); }
+});
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') $$('.overlay.show').forEach(hide); });
+
+/* ===== SETUP ===== */
+function setCat(v){
+  st.cat=v;
+  $$('#fCat .chip').forEach(c=>c.classList.toggle('on',c.dataset.v===v));
+  $$('.tab').forEach(t=>t.classList.toggle('on',t.dataset.cat===v));
+  renderPlans();
+}
+function chipGroup(sel, fn){
+  $$(sel+' .chip').forEach(c=>c.onclick=()=>{ $$(sel+' .chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); fn(c.dataset.v); });
+}
+chipGroup('#fCat', v=>setCat(v));
+chipGroup('#fReg', v=>{st.reg=v;renderPlans();});
+chipGroup('#pFilter', v=>renderPromos(v));
+$$('.tab').forEach(t=>t.onclick=()=>setCat(t.dataset.cat));
+$$('.cat').forEach(c=>c.onclick=()=>{ setCat(c.dataset.go); $('#planes').scrollIntoView(); });
+$('#fText').oninput = e => { st.text = e.target.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim(); renderPlans(); };
+$('#fMax').oninput = e => { st.max=+e.target.value; $('#fMaxV').textContent = fmt(st.max); renderPlans(); };
+$('#sort').onchange = e => { st.sort=e.target.value; renderPlans(); };
+$('#clearF').onclick = () => {
+  st.reg='all'; st.text=''; st.max=5000000; $('#fText').value=''; $('#fMax').value=5000000; $('#fMaxV').textContent=fmt(5000000);
+  $$('#fReg .chip').forEach(c=>c.classList.toggle('on',c.dataset.v==='all')); setCat('todo');
+};
+const openSheet = o => { $('#filters').classList.toggle('open',o); $('#sheetBar').classList.toggle('open',o); };
+$('#openF').onclick = () => openSheet(true);
+$('#closeF').onclick = () => openSheet(false);
+
+// selects de destino
+const opts = '<option value="">Todos los destinos</option>' + PLANS.map(p=>`<option>${p.name}</option>`).join('');
+$('#sDest').innerHTML = opts;
+$('#cDest').innerHTML = PLANS.map(p=>`<option>${p.name}</option>`).join('') + '<option>Otro destino</option>';
+$('#fDest').innerHTML = PLANS.map(p=>`<li><a href="#" onclick="openPlan('${p.id}');return false">${p.name}</a></li>`).join('');
+
+// buscador hero
+$('#sGo').onclick = () => {
+  const d = $('#sDest').value;
+  st.text = d ? d.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'') : '';
+  $('#fText').value = d;
+  renderPlans();
+  $('#planes').scrollIntoView();
+  if(d){ const p = PLANS.find(x=>x.name===d); setTimeout(()=>openPlan(p.id),600); }
+};
+
+// formulario de contacto
+$('#cForm').onsubmit = e => {
+  e.preventDefault();
+  const d = $('#cDate').value ? monthTxt($('#cDate').value) : 'fecha por definir';
+  const m = `Hola, soy ${$('#cName').value} (salgo desde ${$('#cCity').value}). Quiero cotizar ${$('#cDest').value} — ${$('#cCat').value}, ${$('#cPax').value}, ${d}. ${$('#cMsg').value}`;
+  window.open(waUrl(m.trim()),'_blank');
+};
+
+// header + menú
+addEventListener('scroll', ()=> $('#hdr').classList.toggle('solid', scrollY>40));
+$('#burger').onclick = () => $('#menu').classList.toggle('open');
+$$('#menu a').forEach(a=>a.addEventListener('click',()=>$('#menu').classList.remove('open')));
+
+// countdown
+function tick(){
+  let s = Math.max(0, (PROMO_END - new Date())/1000|0);
+  const d=s/86400|0; s%=86400; const h=s/3600|0; s%=3600; const m=s/60|0; s%=60;
+  [['#cdD',d],['#cdH',h],['#cdM',m],['#cdS',s]].forEach(([id,v])=>$(id).textContent=String(v).padStart(2,'0'));
+}
+tick(); setInterval(tick,1000);
+
+// reveal
+const io = new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){x.target.classList.add('in'); io.unobserve(x.target);} }),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+
+// pop-up de promociones (una vez por sesión)
+let seen=false; try{ seen = sessionStorage.getItem('vet_pop')==='1'; }catch(e){}
+if(!seen) setTimeout(()=>{ show('#popPromo'); try{sessionStorage.setItem('vet_pop','1');}catch(e){} }, 3000);
+$('#giftTab').onclick = () => show('#popPromo');
+$('#popSee').onclick = () => { hide($('#popPromo')); $('#promociones').scrollIntoView(); };
+
+$('#yr').textContent = new Date().getFullYear();
+renderPlans(); renderPromos();
+</script>
+</body>
+</html>
